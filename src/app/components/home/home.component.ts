@@ -4,6 +4,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { ContactComponent } from '../contact/contact/contact.component';
 import { ServicesComponent } from '../services/services.component';
 import { ProcessComponent } from '../process/process.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import { ProcessComponent } from '../process/process.component';
     FooterComponent,
     ContactComponent,
     ServicesComponent,
-    ProcessComponent
+    ProcessComponent,
+    ContactFormComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
