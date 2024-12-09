@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #;
+    --accent-color: #007bff;
+    --background-color: #f8f9fa;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
+h1,h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    background-color: var(--accent-color);
+    transform: translateX(-50%);
+}
+
+
+p {
+    color: #6c757d;
+}
+
+h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}

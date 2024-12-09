@@ -1,89 +1,38 @@
-<div>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a routerLink="/" class="navbar-brand d-flex align-items-center">
+        <img src="../../../assets/images/logo.png" alt="EGCO Logo" class="brand-logo me-2" />
+        <span>EGCO</span>
+      </a>
 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a  routerLink="/" class="navbar-brand" >
-            <i class="bi-back"></i>
-            <span>EGCO</span>
-          </a>
-
-          <!-- <div class="d-lg-none ms-auto me-4">
-             <a href="#top" class="navbar-icon bi-person smoothscroll"></a> 
-          </div> -->
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-lg-5 me-lg-auto">
-              <li class="nav-item">
-                <a routerLink="/" class="nav-link" >Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  id="navbarLightDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Services</a
-                >
-
-                <ul
-                  class="dropdown-menu dropdown-menu-light"
-                  aria-labelledby="navbarLightDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href=""
-                      >Accounting Services</a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href=""
-                      >IT Services</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href=""
-                      >Hr Services</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a  routerLink="/about" class="nav-link">About Us</a>
-              </li>
-
-              <li class="nav-item">
-                <a routerLink="/contact" class="nav-link"> Contact Us</a>
-              </li>
-
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a routerLink="/services" class="nav-link dropdown-toggle" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+              <li><a routerLink="/services/accounting-services" class="dropdown-item">Accounting Services</a></li>
+              <li><a class="dropdown-item">IT Services</a></li>
+              <li><a class="dropdown-item">HR Services</a></li>
             </ul>
-
-            <!-- <div class="d-none d-lg-block">
-              <a  class="navbar-icon bi-person smoothscroll"></a>
-            </div> -->
-          </div>
-        </div>
-      </nav>
-
-  <!-- </body> -->
-
-
+          </li>
+          <li class="nav-item"><a routerLink="/about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a routerLink='/contact' class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div>
+  <router-outlet></router-outlet>
 </div>
+  
 
-<router-outlet></router-outlet>
-
+  

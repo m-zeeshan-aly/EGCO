@@ -1,13 +1,29 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { AboutComponent } from './components/about/about.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ServicesComponent } from './components/services/services.component';
+import { AccountingServicesComponent } from './components/accounting-services/accounting-services.component';
 
 export const routes: Routes = [
-
-  { path: '', component: HomeComponent },
-  { path: 'contact', component: ContactFormComponent }, 
-  { path: 'about', component: AboutComponent },
-  // { path: '**', redirectTo: '' }, 
+  { 
+    path: '', 
+    component: HomeComponent 
+  },
+  { 
+    path: 'about', 
+    component: AboutComponent 
+  },
+  { 
+    path: 'contact', 
+    component: ContactFormComponent 
+  },
+  {
+    path: 'services',
+    component: ServicesComponent
+  },
+  {
+    path: 'services/accounting-services',
+    component: AccountingServicesComponent
+  }
 ];
-

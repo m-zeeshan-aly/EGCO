@@ -1,0 +1,204 @@
+.featured-section {
+    padding: 60px 0;
+}
+
+.custom-block {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.custom-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-block-image {
+    object-fit: cover;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-block:hover .custom-block-image {
+    transform: scale(1.1);
+}
+
+.custom-block h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.custom-block p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.custom-block .badge {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+.custom-block-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.custom-block-overlay-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-block:hover .custom-block-overlay {
+    opacity: 1;
+}
+
+.custom-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.social-share {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.social-share .social-icon-item {
+    margin-right: 10px;
+}
+
+.social-icon-link {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icon-link:hover {
+    color: #ff7b00;
+}
+
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.custom-service-btn {
+    background: linear-gradient(45deg, #ff6f61, #ff8c00);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.custom-service-btn:hover {
+    background: linear-gradient(45deg, #ff8c00, #ff6f61);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-service-btn:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.custom-service-btn:hover:before {
+    opacity: 1;
+}
+
+.custom-service-btn:focus,
+.custom-service-btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.featured-section {
+    padding: 60px 0;
+}
+
+.custom-block {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.custom-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-block-image {
+    object-fit: cover;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-block:hover .custom-block-image {
+    transform: scale(1.1);
+}
+.searchBtn{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.searchBtn:hover{
+    background-color: var(Custom-btn-bg-hover-color); ;
+}
+.explore-btn, .contact-btn {
+    transition: all 0.3s ease; 
+}
+
+.explore-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color); 
+    transform: translateY(-5px); 
+}
+
+.contact-btn:hover {
+    background-color: var(--custom-btn-bg-color); 
+    color: var(--white-color); 
+    transform: translateY(-5px);
+    border-color: var(--primary-color); 
+}

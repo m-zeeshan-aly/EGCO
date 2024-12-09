@@ -1,0 +1,111 @@
+.brand-logo {
+    height: 90px; /* Adjust height as needed */
+    width: auto;  /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded corners */
+  }
+
+  .social-icons a {
+    margin-left: 24px;
+    font-size: 18px; /* You can adjust the size of the icons */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Makes the icon slightly larger on hover */
+    color: #007bff; /* You can change the hover color */
+}
+
+.footer-custom {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.05);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    z-index: 0;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-title {
+    color: #22d3ee;
+    border-bottom: 2px solid #22d3ee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-links li:hover {
+    transform: translateX(10px);
+}
+
+.footer-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #22d3ee;
+}
+
+.language-dropdown .dropdown-toggle {
+    background-color: #22d3ee;
+    border: none;
+}
+
+.logo-tagline {
+    display: flex;
+    align-items: center;
+}
+
+.logo-tagline img {
+    max-width: 100px;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.copyright-text {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-custom {
+        text-align: center;
+    }
+
+    .logo-tagline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-tagline img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
