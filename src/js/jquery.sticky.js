@@ -14,6 +14,9 @@
     var slice = Array.prototype.slice; // save ref to original slice()
     var splice = Array.prototype.splice; // save ref to original slice()
 
+
+ 
+
   var defaults = {
       topSpacing: 0,
       bottomSpacing: 0,
@@ -215,5 +218,5 @@
 })(jQuery);
 
 $(document).ready(function(){
-      $(".navbar").sticky({topSpacing:0});
+      $(".navbar")?.sticky({topSpacing:0});
     });

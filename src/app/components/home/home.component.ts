@@ -8,7 +8,7 @@ import { AboutComponent } from '../about/about.component';
 import { ServicesComponent } from '../services/services.component';
 import { ProcessComponent } from '../process/process.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -21,7 +21,8 @@ import { RouterOutlet } from '@angular/router';
     ServicesComponent,
     ProcessComponent,
     ContactFormComponent,
-    AboutComponent
+    AboutComponent,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

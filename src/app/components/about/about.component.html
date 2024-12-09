@@ -1,145 +1,230 @@
-    <div class="container mx-auto px-4 py-16 max-w-6xl">
-        <section class="about-header text-center">
+<div class="about-page" style="background-color: var(--section-bg-color); font-family: var(--body-font-family);">
+    <div class="container-fluid px-0">
+        <!-- <section class="about-header position-relative overflow-hidden">
+            <div class="row g-0">
+                <div class="col-12 text-center position-relative" style="height: 70vh;">
+                    <div class="overlay position-absolute w-100 h-100" style="background-color: var(--primary-color); opacity: 0.7;"></div>
+                    <div class="container position-relative z-2 text-white h-100 d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <h1 class="display-3 fw-bold mb-4" style="font-family: var(--title-font-family); color: var(--white-color); font-size: var(--h1-font-size);">
+                                About EGCO Services
+                            </h1>
+                            <p class="lead mb-0" style="color: var(--white-color); font-size: var(--p-font-size); opacity: 0.9;">
+                                Pioneering excellence across Accounting, HR, and IT Services for over 20 years. 
+                                We transform challenges into opportunities, delivering innovative solutions that drive business growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="about-header position-relative overflow-hidden">
+            <div class="row g-0">
+                <div class="col-12 text-center position-relative" style="height: 70vh;">
+                    <!-- Background Image -->
+                    
+                    <div class="overlay position-absolute w-100 h-100" style="background-color: var(--primary-color); opacity: 0.7;"></div>
+                    <div class="container position-relative z-2 text-white h-100 d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-lg-10">
+
+                            <!-- Title Section -->
+                            <h1 class="display-3 fw-bold mb-4" style="font-family: var(--title-font-family); color: var(--white-color); font-size: var(--h1-font-size);">
+                                About EGCO
+                            </h1>
+                            <p class="lead mb-0" style="color: var(--white-color); font-size: var(--p-font-size); opacity: 0.9;">
+                                Pioneering excellence across Accounting, HR, and IT Services for over 20 years. 
+                                We transform challenges into opportunities, delivering innovative solutions that drive business growth.
+                            </p>
+                            
+                            <!-- Call-to-Action Button -->
+                            <a  [routerLink]="['/services']" class="btn btn-lg rounded-pill px-5 mt-4 py-3 shadow-lg text-white fw-bold" style="background-color: var(--custom-btn-bg-hover-color);">Discover Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Service Icons/Statistics Section -->
+            <div class="container mt-5 text-center">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-box">
+                            <i class="bi bi-briefcase text-primary" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3">Accounting</h4>
+                            <p>Trusted financial services for businesses of all sizes and industries.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-box">
+                            <i class="bi bi-people text-primary" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3">HR Services</h4>
+                            <p>Expert HR solutions for a productive and engaged workforce.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="service-box">
+                            <i class="bi bi-laptop text-primary" style="font-size: 3rem;"></i>
+                            <h4 class="mt-3">IT Services</h4>
+                            <p>Advanced IT support to keep your business running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Statistics Section -->
+            <div class="container text-center my-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h3>20+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>500+</h3>
+                        <p>Successful Projects</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>1000+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden h-100" style="border-radius: var(--border-radius-medium);">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5 position-relative">
+                                <div class="image-container h-100" style="background-image: url('../../../assets/images/colleagoes.jpg'); background-size: cover; background-position: center; background-color: var(--secondary-color);"></div>
+                            </div>
+                            <div class="col-md-7 d-flex align-items-center">
+                                <div class="card-body p-4">
+                                    <h2 class="card-title" style="color: var(--primary-color); font-family: var(--title-font-family); font-size: var(--h3-font-size); font-weight: var(--font-weight-bold);">
+                                        Our Vision
+                                    </h2>
+                                    <p class="card-text" style="color: var(--p-color); font-size: var(--p-font-size);">
+                                        Empowering businesses to transcend limitations through strategic innovation, 
+                                        integrating accounting precision, HR expertise, and cutting-edge IT solutions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden h-100" style="border-radius: var(--border-radius-medium);">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-5 position-relative order-md-2">
+                                <div class="image-container h-100" style="background-image: url('../../../assets/images/mission3.jpg'); background-size: cover; background-position: center;"></div>
+                            </div>
+                            <div class="col-md-7 order-md-1 d-flex align-items-center">
+                                <div class="card-body p-4">
+                                    <h2 class="card-title" style="color: var(--primary-color); font-family: var(--title-font-family); font-size: var(--h3-font-size); font-weight: var(--font-weight-bold);">
+                                        Our Mission
+                                    </h2>
+                                    <p class="card-text" style="color: var(--p-color); font-size: var(--p-font-size);">
+                                        Transforming businesses through comprehensive, innovative solutions that address 
+                                        complex challenges and unlock sustainable success.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <h2 class="display-4 text-center mb-5" style="color: var(--primary-color); font-family: var(--title-font-family); font-size: var(--h2-font-size); font-weight: var(--font-weight-bold);">
+                Leadership Team
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="border-radius: var(--border-radius-medium);">
+                        <div class="row g-0">
+                            <div class="col-md-5 position-relative">
+                                <div class="leadership-image h-100" style="background-image: url('../../../assets/images/dummy.jpg'); background-size: cover; background-position: center;"></div>
+                            </div>
+                            <div class="col-md-7 d-flex align-items-center">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title" style="color: var(--primary-color); font-family: var(--title-font-family); font-size: var(--h4-font-size); font-weight: var(--font-weight-semibold);">
+                                        John Doe
+                                    </h3>
+                                    <h4 class="mb-3" style="color: var(--p-color); font-size: var(--h6-font-size);">
+                                        Chief Executive Officer
+                                    </h4>
+                                    <p class="card-text" style="color: var(--p-color); font-size: var(--p-font-size);">
+                                        Visionary leader with 15+ years of strategic consulting experience, 
+                                        bringing innovative thinking to organizational success.
+                                    </p>
+                                    <div class="social-icons">
+                                        <a href="#" style="color: var(--primary-color); margin-right: 10px;"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" style="color: var(--primary-color); margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" style="color: var(--primary-color);"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="border-radius: var(--border-radius-medium);">
+                        <div class="row g-0">
+                            <div class="col-md-5 position-relative order-md-2">
+                                <div class="leadership-image h-100" style="background-image: url('../../../assets/images/banner-1.jpg'); background-size: cover; background-position: center;"></div>
+                            </div>
+                            <div class="col-md-7 order-md-1 d-flex align-items-center">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title" style="color: var(--primary-color); font-family: var(--title-font-family); font-size: var(--h4-font-size); font-weight: var(--font-weight-semibold);">
+                                        Michael Chen
+                                    </h3>
+                                    <h4 class="mb-3" style="color: var(--p-color); font-size: var(--h6-font-size);">
+                                        Chief Technology Officer
+                                    </h4>
+                                    <p class="card-text" style="color: var(--p-color); font-size: var(--p-font-size);">
+                                        Technology innovator specializing in digital transformation, 
+                                        driving innovation in the digital landscape.
+                                    </p>
+                                    <div class="social-icons">
+                                        <a href="#" style="color: var(--primary-color); margin-right: 10px;"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" style="color: var(--primary-color); margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" style="color: var(--primary-color);"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5" style="background-color: var(--secondary-color);">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-lg-10">
-                        <h1 class="display-4 fw-bold mb-4 about-title">
-                            About US
-                        </h1>
-                        <p class="lead text-muted mb-0 about-subtitle">
-                            Pioneering business transformation through strategic expertise, innovative solutions, and a relentless commitment to client success.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    
-        <div class="container py-5">
-            <div class="row card-section bg-white shadow-lg rounded-4 overflow-hidden border border-primary mb-5">
-                <div class="col-md-6 p-0">
-                    <img src="../../../assets/images/aboutpage.jpeg" alt="EGCO Services Vision" class="img-fluid w-100 h-100 object-cover">
-                </div>
-                <div class="col-md-6 p-5 d-flex align-items-center">
-                    <div>
-                        <h2 class="section-title text-primary fw-bold mb-4">Our Vision</h2>
-                        <p class="text-muted mb-3">
-                            At EGCO Services, we envision a world where businesses transcend traditional limitations through strategic innovation. Our mission is to empower organizations with tailored solutions that drive operational excellence, technological advancement, and sustainable growth.
-                        </p>
-                        <p class="text-muted">
-                            We believe in a holistic approach that integrates accounting precision, human resource expertise, and cutting-edge IT solutions to create transformative business strategies.
-                        </p>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row card-section bg-white shadow-lg rounded-4 overflow-hidden border border-success">
-                <div class="col-md-6 order-md-2 p-0">
-                    <img 
-                        src="../../../assets/images/mission.jpeg" 
-                        alt="EGCO Services Mission" 
-                        class="img-fluid w-100 h-100" 
-                        style="object-fit: cover; object-position: center; image-rendering: high-quality;"
-                    >
-                </div>
-                <div class="col-md-6 order-md-1 p-5 d-flex align-items-center">
-                    <div>
-                        <h2 class="section-title text-success fw-bold mb-4">Our Mission</h2>
-                        <p class="text-muted mb-3">
-                            Our mission is to be the catalyst that transforms businesses by providing comprehensive, innovative solutions that address complex operational challenges. We are committed to delivering exceptional value through strategic consulting, technological integration, and personalized service.
-                        </p>
-                        <p class="text-muted">
-                            We strive to build long-term partnerships with our clients, understanding their unique needs and developing customized strategies that unlock their full potential and drive sustainable success.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-        <div class="container py-5">
-            <h2 class="display-5 fw-bold text-center mb-5 leadership-title">Our Leadership Team</h2>
-            
-            <div class="row g-4">
-                <div class="col-12 mb-4">
-                    <div class="card leadership-card shadow-lg">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <div class="leadership-image" style="background-image: url('../../../assets/images/team1.jpeg');">
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body leadership-content p-5">
-                                    <h3 class="card-title display-6 mb-3">John Doe</h3>
-                                    <h4 class="text-primary mb-4">Chief Executive Officer</h4>
-                                    <p class="card-text text-muted mb-4">
-                                        A visionary leader with 15+ years of strategic consulting experience across multiple industries. Sarah brings a unique blend of strategic insights, operational expertise, and innovative thinking to drive organizational success.
-                                    </p>
-                                    <div class="social-icons text-center">
-                                        <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-12">
-                    <div class="card leadership-card shadow-lg">
-                        <div class="row g-0">
-                            <div class="col-md-7 order-md-2">
-                                <div class="leadership-image" style="background-image: url('../../../assets/images/team2.jpeg');"></div>
-                                <!-- <img 
-                                src="../../../assets/images/team2.jpeg" 
-                                alt="EGCO Team " 
-                                class="img-fluid w-100 h-100" 
-                                style="object-fit: cover; object-position: center; image-rendering: high-quality;"
-                            > -->
-                            </div>
-                            <div class="col-md-5 order-md-1">
-                                <div class="card-body leadership-content p-5">
-                                    <h3 class="card-title display-6 mb-3">Michael Chen</h3>
-                                    <h4 class="text-primary mb-4">Chief Technology Officer</h4>
-                                    <p class="card-text text-muted mb-4">
-                                        A technology innovator specializing in digital transformation and strategic IT solutions. Michael leads our technology vision, driving innovation and ensuring our clients stay ahead in the rapidly evolving digital landscape.
-                                    </p>
-                                    <div class="social-icons text-center">
-                                        <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="text-decoration-none"><i class="fas fa-envelope"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-          <div class="container py-5">
-            <section class="commitment-section text-white text-center p-5 p-md-12 rounded-4 shadow-lg ">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-10">
-                        <h2 class="text-5xl font-black mb-6 leadership-gradient">
+                    <div class="col-12 col-lg-10 text-center">
+                        <h2 class="display-4 mb-4" style="color: var(--primary-color); font-family: var(--title-font-family); font-size: var(--h2-font-size); font-weight: var(--font-weight-bold);">
                             Our Commitment to Excellence
                         </h2>
-                        <p class="lead mb-5 opacity-75">
-                            We don't just solve problems; we create opportunities. Our approach combines deep industry knowledge, innovative thinking, and a passion for driving meaningful business transformation.
+                        <p class="lead mb-5" style="color: var(--dark-color); font-size: var(--p-font-size);">
+                            We transform challenges into opportunities through innovative thinking, 
+                            deep industry knowledge, and a passion for meaningful business transformation.
                         </p>
-                        <a 
-                            href="mailto:contact@egco.pk" 
-                            class="btn btn-light btn-lg rounded-pill px-5 py-3 connect-btn shadow-lg fw-bold text-primary"
-                        >
+                        <a href="mailto:contact@egco.pk" [routerLink]="['/contact']" class="btn btn-lg rounded-pill px-5 py-3 shadow-lg" style="
+                            background-color: var(--custom-btn-bg-hover-color);
+                            color: var(--white-color);
+                            font-size: var(--btn-font-size);
+                            font-weight: var(--font-weight-semibold);
+                            transition: background-color 0.3s ease;">
                             Connect With Us
                         </a>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
 
-
-
+</div>
