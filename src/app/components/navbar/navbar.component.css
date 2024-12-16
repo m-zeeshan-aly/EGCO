@@ -1,8 +1,22 @@
 .brand-logo {
-    height: 40px; 
+    height: 40px;
     width: auto;
-    border-radius: 5px; 
+    border-radius: 5px;
   }
+
+
+  .navbar-brand {
+  display: flex;
+  align-items: center; /* Vertically center the logo */
+  max-height: 60px; /* Match the height constraint for consistency */
+  overflow: visible;
+}
+
+.navbar-brand img {
+  width: 75px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 40; /* Limit height to fit within the navbar */
+}
 
 
 .navbar {
