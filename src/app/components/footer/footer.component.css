@@ -77,14 +77,17 @@
     border: none;
 }
 
+
 .logo-tagline {
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
 
 .logo-tagline img {
+
     max-width: 200px;
     margin-right: 15px;
     border-radius: 10px;

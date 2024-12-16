@@ -1,7 +1,7 @@
 .brand-logo {
     height: 40px;
     width: auto;
-    border-radius: 5px;
+    border-radius: 5px; 
   }
 
 
@@ -19,32 +19,25 @@
 }
 
 
-.navbar {
-  background-image: linear-gradient(to left, var(--primary-color) 0%, #80d0c7 50%);
-  position: sticky; /* Makes it sticky */
-  top: 0; /* Sticks to the top of the viewport */
-  z-index: 1000; /* Ensures it's above other elements */
-}
 
 .navbar {
   background-image: linear-gradient(to left, var(--primary-color) 0%, #80d0c7 50%);
-  position: sticky; /* Makes it sticky */
-  top: 0; /* Sticks to the top of the viewport */
-  z-index: 1000; /* Ensures it's above other elements */
-  transition: background-color 0.5s ease, background-image 0.5s ease; /* Smooth transition */
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  transition: background-color 0.5s ease, background-image 0.5s ease; 
 }
 
-/* Change navbar background on scroll */
+
 .navbar.scrolled {
-  background-color: var(--secondary-color); /* New background color on scroll */
-  background-image: none; /* Remove gradient if needed */
+  background-color: var(--secondary-color); 
+  background-image: none; 
 }
-
 
 
 @media (max-width: 768px) {
   .navbar {
-    background-color: var(--secondary-color); /* Always secondary color for mobile */
-    background-image: none; /* No gradient on mobile */
+    background-color: var(--secondary-color);
+    background-image: none;
   }
 }
