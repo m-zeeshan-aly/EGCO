@@ -1,9 +1,15 @@
   <nav class="navbar navbar-expand-lg" [ngClass]="{ 'scrolled': isScrolled }">
     <div class="container">
-      <a routerLink="/" class="navbar-brand d-flex align-items-center">
-        <img src="../../../assets/images/logo.png" alt="EGCO Logo" class="brand-logo me-2" />
-        <span>EGCO</span>
+
+       <a routerLink="/" class="navbar-brand d-flex align-items-center">
+        <img 
+          src="../../../assets/images/logo.png" 
+          alt="EGCO Logo" 
+          class="brand-logo" 
+        />
       </a>
+
+
   
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +26,8 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
               <li><a routerLink="/services/accounting-services" class="dropdown-item">Accounting Services</a></li>
-              <li><a class="dropdown-item">IT Services</a></li>
-              <li><a class="dropdown-item">HR Services</a></li>
+              <li><a routerLink="/services/it-services" class="dropdown-item">IT Services</a></li>
+              <li><a routerLink="/services/hr-services" class="dropdown-item">HR Services</a></li>
             </ul>
           </li>
           <li class="nav-item"><a routerLink="/about" class="nav-link">About Us</a></li>
